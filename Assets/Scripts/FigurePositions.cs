@@ -27,8 +27,8 @@ public class FigurePositions : ScriptableObject
             foreach (var f in group[8])
             {
                 _boardCells[i, 0].Figure = _boardCells[i, _boardConfig.Y - 1].Figure = f;
-                _boardCells[_boardConfig.X - i, 0].Figure = 
-                    _boardCells[_boardConfig.X - i, _boardConfig.Y - 1].Figure = f;
+                _boardCells[_boardConfig.X - 1 - i, 0].Figure = 
+                    _boardCells[_boardConfig.X - 1 - i, _boardConfig.Y - 1].Figure = f;
             }
         }
 
