@@ -13,7 +13,13 @@ public class Board : MonoBehaviour
         foreach (var f in _cells)
         {
             if (f.Figure != null)
-                Instantiate(f.Figure, f.Pos, Quaternion.identity);
+            {
+                var obj = f.Figure.Prefab;
+                obj.transform.position = f.Pos;
+            
+                if (obj != null)
+                    Instantiate(obj, gameObject.transform);
+            }
         }
     }
     

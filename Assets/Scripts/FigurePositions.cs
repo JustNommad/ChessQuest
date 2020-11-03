@@ -10,35 +10,34 @@ public class FigurePositions : ScriptableObject
 
     public Cell[,] GetPositions()
     {
-        var group = _figureConfig.GetNumberOfTypes();
+        var group = _figureConfig.Group;
         var _boardCells = _boardConfig.Cells();
 
-        for (int i = 0; i < _boardConfig.X; i++)
+        foreach (var f in group)
         {
-            foreach (var f in group[8])
-            {
-                _boardCells[i, 1].Figure = f;
-                _boardCells[i, _boardConfig.Y - 2].Figure = f;
-            }
-        }
-        
-        for (int i = 0; i < (_boardConfig.X / 2) - 1; i++)
-        {
-            foreach (var f in group[8])
-            {
-                _boardCells[i, 0].Figure = _boardCells[i, _boardConfig.Y - 1].Figure = f;
-                _boardCells[_boardConfig.X - 1 - i, 0].Figure = 
-                    _boardCells[_boardConfig.X - 1 - i, _boardConfig.Y - 1].Figure = f;
-            }
+            var posX = (int)f.StartingPosition.x;
+            var posY = (int)f.StartingPosition.y;
+            _boardCells[posX, posY].Figure = f;
         }
 
-        for (int i = _boardConfig.X / 2; i < _boardConfig.X / 2 + 1; i++)
+        _boardCells[_boardConfig.X/2, _boardConfig.Y - 1].Figure 
+            = _boardCells[_boardConfig.X/2 - 1, 0].Figure;
+        _boardCells[_boardConfig.X/2 - 1, _boardConfig.Y - 1].Figure 
+            = _boardCells[_boardConfig.X/2, 0].Figure;
+        
+        for (int i = 0; i < _boardConfig.X; i++)
         {
-            foreach (var f in group[1])
-            {
-                _boardCells[i, 0].Figure = f;
-                _boardCells[i, _boardConfig.Y - 1].Figure = f;
-            }
+            _boardCells[i, 1].Figure 
+                = _boardCells[i, _boardConfig.Y - 2].Figure 
+                = _boardCells[0, 1].Figure;
+        }
+        for (int i = 0; i < (_boardConfig.X / 2) - 1; i++)
+        {
+            _boardCells[i, _boardConfig.Y - 1].Figure 
+                = _boardCells[i, 0].Figure
+                = _boardCells[_boardConfig.X - 1 - i, 0].Figure 
+                = _boardCells[_boardConfig.X - 1 - i, _boardConfig.Y - 1].Figure
+                = _boardCells[i, 0].Figure;
         }
 
         return _boardCells;

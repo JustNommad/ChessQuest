@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: King
   m_EditorClassIdentifier: 
   _id: King
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 1389686872840900, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
   _type: King
   _movementType: {x: 0, y: 0}
+  _startingPosition: {x: 3, y: 0}

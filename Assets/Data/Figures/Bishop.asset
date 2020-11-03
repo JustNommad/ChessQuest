@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e06b23aad65cc48e2ace9f5e946c793f, type: 3}
-  m_Name: Boshop
+  m_Name: Bishop
   m_EditorClassIdentifier: 
-  _id: Boshop
-  _prefab: {fileID: 0}
-  _type: Boshop
+  _id: Bishop
+  _prefab: {fileID: 1028868664329696, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
+  _type: Bishop
   _movementType: {x: 0, y: 0}
+  _startingPosition: {x: 2, y: 0}

@@ -9,9 +9,11 @@ public class FigureInfo : ScriptableObject
     [SerializeField] private GameObject _prefab;
     [SerializeField] private string _type;
     [SerializeField] private Vector2 _movementType;
+    [SerializeField] private Vector2 _startingPosition;
 
     public string ID => _id;
     public GameObject Prefab => _prefab;
     public string Type => _type;
     public Vector2 MovementType => _movementType;
+    public Vector2 StartingPosition => _startingPosition;
 }

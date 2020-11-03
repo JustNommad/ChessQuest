@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Pawn
   m_EditorClassIdentifier: 
   _id: Pawn
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 1006356879557798, guid: 391882f14be491c40962add653844907, type: 3}
   _type: Pawn
   _movementType: {x: 0, y: 0}
+  _startingPosition: {x: 0, y: 1}

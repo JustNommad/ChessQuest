@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Queen
   m_EditorClassIdentifier: 
   _id: Queen
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 1945632463053948, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
   _type: Queen
   _movementType: {x: 0, y: 0}
+  _startingPosition: {x: 4, y: 0}

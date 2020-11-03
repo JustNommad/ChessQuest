@@ -9,7 +9,7 @@ public class Cell
 
     public Vector3 Pos
     {
-        get => new Vector3(_pos.x, _pos.y, 1f);
+        get => new Vector3(_pos.x, 0.0f, _pos.y);
     }
 
     public Cell(Vector2 position)

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   _id: Knight
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 1992623236052302, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
   _type: Knight
   _movementType: {x: 0, y: 0}
+  _startingPosition: {x: 1, y: 0}
