@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410748694024149df98dd3a95affde6d, type: 3}
+  m_Name: ChessConfig
+  m_EditorClassIdentifier: 
+  _id: Config
+  _eightFigures: {fileID: 11400000, guid: cd5966934cf60402eb06518bc440cc2d, type: 2}
+  _twoFigures:
+  - {fileID: 11400000, guid: 6574054450da84cb3b5a02d7139745bb, type: 2}
+  - {fileID: 11400000, guid: 09fea6b24819941638889b547b29920f, type: 2}
+  - {fileID: 11400000, guid: 0bb7687f29dc04250ae7e3b0bd37ece4, type: 2}
+  _oneFigures:
+  - {fileID: 11400000, guid: 9bfca2ac370694fa0a48df804728028a, type: 2}
+  - {fileID: 11400000, guid: adf138eb90973451bb605577a6abebbf, type: 2}
